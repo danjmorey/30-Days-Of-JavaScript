@@ -249,20 +249,61 @@ for (let i = 0; i <= 100; i++){
         console.log(i);
     }
 }
-unfinished
-//for (let i = 0; i <= 100; i++){
-    //}
-    let i = 23;    
-    for (let n = 2; n < i; n++) {
-        if (n % i === 0){
-            console.log();
-        }   
-    }
 
-    */
+//fuck prime numbers
+for(let i = 2; i <= 100; i++) {
+    for (let n = 2; n < i; n++) {
+        if (i % n === 0){
+            //console.log('Not prime');
+            break;
+        } else {
+            console.log(i);
+            //break;
+        }
+        
+    }
+}
+
+let sum = 0;
+for(let i = 0; i <= 100; i++){
+    sum += i;
+}
+console.log(sum);
+
+let evens = 0;
+let odds = 0;
+for(let i = 0; i <= 100; i++){
+    if(i % 2 === 0){
+        evens += i;
+    } else {
+        odds += i;
+    }
+}
+console.log(evens);
+console.log(odds);
+
+let numArr = [0,0];
+for(let i = 0; i <= 100; i++){
+    if(i % 2 === 0){
+        numArr[0] += i;
+    } else {
+        numArr[1] += i;
+    }
+}
+console.log(numArr);
+*/
+
+let randArr = [];
+for(let i = 0; i < 5; i++){
+    randArr.push(Math.random()* 10);
+}
+console.log(randArr);
+
 //Exercise 2
 
+/*
 let randString = "";
 for (let i = 0; i > 10; i++){
-    
+
 }
+*/
