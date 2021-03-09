@@ -228,7 +228,6 @@ do {
     console.log(stringLit);
 } while (i <= 10)
 
-*/
 for (let i = 0; i <= 10; i++){
     if (i === 0){
         let stringLit = `i    i^2    i^3`;
@@ -239,4 +238,31 @@ for (let i = 0; i <= 10; i++){
     console.log(stringLit);
 }
 
+for (let i = 0; i <= 100; i++){
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+}
+
+for (let i = 0; i <= 100; i++){
+    if (i % 2 != 0) {
+        console.log(i);
+    }
+}
+unfinished
+//for (let i = 0; i <= 100; i++){
+    //}
+    let i = 23;    
+    for (let n = 2; n < i; n++) {
+        if (n % i === 0){
+            console.log();
+        }   
+    }
+
+    */
 //Exercise 2
+
+let randString = "";
+for (let i = 0; i > 10; i++){
+    
+}
