@@ -291,11 +291,19 @@ for(let i = 0; i <= 100; i++){
     }
 }
 console.log(numArr);
+
+let randArr = [];
+for(let i = 0; i < 5; i++){
+    randArr.push(Math.floor(Math.random() * 10));
+}
+console.log(randArr);
 */
 
 let randArr = [];
 for(let i = 0; i < 5; i++){
-    randArr.push(Math.random()* 10);
+    //if() {
+        randArr.push(Math.floor(Math.random() * 100));
+    //}
 }
 console.log(randArr);
 
