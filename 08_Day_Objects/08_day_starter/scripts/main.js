@@ -62,15 +62,31 @@ const users = {
     isLoggedIn: false,
     points: 40
   }
-  findMost: function() {
-    return this
+}
+const names = Object.values(users);
+const keys = Object.keys(users);
+let highScore = 0;
+let scoreIndex = 0;
+for(let i = 0; i < names.length; i++){
+  if(names[i].skills.length > highScore){
+    highScore = names[i].skills.length;
+    scoreIndex = i;
+  }
+  //console.log(highScore);
+}
+console.log(keys[scoreIndex])
+let loggedInUsers = 0;
+for(let i = 0; i < names.length; i++){
+  if(names[i].isLoggedIn){
+    loggedInUsers++;
   }
 }
-const keys = Object.keys(users);
-let i = 2;
-//let mostSkills = '';
-//for(let i = 0; i < keys.length; i++){
-  
-//}
+console.log(loggedInUsers);
 
-console.log(users[i])
+let fiftyPoints = 0;
+for(let i = 0; i < names.length; i++){
+  if(names[i].points >= 50){
+    fiftyPoints++;
+  }
+}
+console.log(fiftyPoints + " users with 50 points or more")
