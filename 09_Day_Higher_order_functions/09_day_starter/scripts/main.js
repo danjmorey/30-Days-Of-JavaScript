@@ -15,6 +15,8 @@ const products = [
 countries.forEach((element) => console.log(element))
 names.forEach((penis) => console.log(penis))
 numbers.forEach((aNumber) => console.log(aNumber))
-*/
 const upperCaseCountries = countries.map((element) => element.toUpperCase())
 console.log(upperCaseCountries);
+*/
+const countryLength = countries.map((element) => element.length())
+console.log(countryLength)
