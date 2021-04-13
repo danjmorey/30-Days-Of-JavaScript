@@ -64,3 +64,6 @@ let {width, height, area, perimeter = 100} = rectangle;
 
 console.log(users.forEach(logPerson))
 */
+function getKeys({name, skills}){
+  
+}
