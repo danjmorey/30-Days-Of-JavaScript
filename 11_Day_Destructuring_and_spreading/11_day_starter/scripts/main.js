@@ -61,9 +61,20 @@ let {width, height, area, perimeter = 100} = rectangle;
         console.log(person, age)
     }
 }
-
 console.log(users.forEach(logPerson))
-*/
-function getKeys({name, skills}){
-  
+
+function checkSkills({name, skills}){
+  if (skills.length > 2){
+    console.log(name, skills.length)
+  }
 }
+console.log(users.forEach(checkSkills))
+*/
+
+function checkNoDestruct(singleUser){
+  if(singleUser.skills.length < 2){
+    console.log(singleUser.name)
+  }
+}
+
+users.forEach(checkNoDestruct)
